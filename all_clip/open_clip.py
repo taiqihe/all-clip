@@ -38,7 +38,6 @@ def load_open_clip(clip_model, use_jit=True, device="cuda", clip_cache_path=None
     """load open clip"""
 
     import open_clip  # pylint: disable=import-outside-toplevel
-    from open_clip.factory import HF_HUB_PREFIX, LOCAL_DIR_PREFIX
 
     torch.backends.cuda.matmul.allow_tf32 = True
 
